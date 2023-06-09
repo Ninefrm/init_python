@@ -42,7 +42,7 @@ Having the folder/repository created
     .\env\Scripts\activate 
     ```
 2. Init required folders:
-    ### MacOS
+    ### MacOS / Linux
     ```bash
     mkdir -p config source test utils && touch main.py config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
     ```
