@@ -62,7 +62,3 @@ Having the folder/repository created
     So if you had a file source/routes/user.py, you might have a corresponding test file test/routes/test_user.py. This makes it easy to find the tests for a given piece of functionality.
 
     4. **utils**: This directory is usually used for utility scripts or modules that are used across your application. For example, you might have a utils.py file with common helper functions, or a logging.py file to set up logging consistently across your application.
-
-
-    git config --global user.email "maxfonseca.r@gmail.com"
-    git config --global user.name "Maximiliano Fonseca"
