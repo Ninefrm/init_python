@@ -4,11 +4,10 @@ These are the steps I normally follow to start a python project, I do it more as
 ## Prerequisites
 1. Installation Pyenv & virtualenv:
 
-    ### [MacOS](https://github.com/pyenv/pyenv 'Pyenv repo') & [Virtualenv](https://github.com/pyenv/pyenv-virtualenv 'Virtualenv repo')
+    ### [MacOS](https://github.com/pyenv/pyenv 'Pyenv repo') 
     ```bash
     brew update
     brew install pyenv
-    brew install pyenv-virtualenv
     ```
     ### [Windows](https://github.com/pyenv-win/pyenv-win 'Pyenv-win') || Powershell
     ```bash
@@ -24,10 +23,11 @@ Having the folder/repository created
         pyenv install -l #List python version list
         pyenv install <version> # Install your version if needed
     pyenv local <version> # Set the version needed
+    python -m pip install –user virtualenv # Install virtualenv
     # Create a new virtual environment (replace 'env' with your desired environment name)
-    pyenv virtualenv <version> env
+    python -m venv env
     # Activate the virtual environment
-    pyenv activate env
+    source env/bin/activate
     ```
     ### Windows
     ```bash

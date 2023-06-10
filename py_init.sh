@@ -14,10 +14,14 @@ if [ "$sys" = "unix" ]; then
     # Init project on Unix
     pyenv install $version # Install desired Python version
     pyenv local $version # Set the desired Python version
-    
-    # Create and activate a new virtual environment
-    pyenv virtualenv $version env
-    pyenv activate env
+    python -m pip install virtualenv # Install virtualenv
+
+    # Create a new virtual environment (replace 'env' with your desired environment name)
+    python -m venv env
+
+    # Activate the virtual environment
+    echo 'please run:'
+    echo 'source env/bin/activate'
 
     # Init required folders on Unix
     mkdir -p config source test utils && touch main.py config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
