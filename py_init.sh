@@ -24,7 +24,7 @@ if [ "$sys" = "unix" ]; then
     echo 'source env/bin/activate'
 
     # Init required folders on Unix
-    mkdir -p config source test utils && touch main.py config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
+    mkdir -p config source test utils && touch main.py requirements.txt config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
 elif [ "$sys" = "win" ]; then
     echo 'Run py_init.ps1 version'
 else

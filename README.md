@@ -44,11 +44,11 @@ Having the folder/repository created
 2. Init required folders:
     ### MacOS / Linux
     ```bash
-    mkdir -p config source test utils && touch main.py config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
+    mkdir -p config source test utils && touch main.py requirements.txt config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
     ```
     ### Windows || Powershell
     ```bash
-    New-Item -ItemType File -Path main.py -Force; New-Item -ItemType File -Path .\config\__init__.py -Force; New-Item -ItemType File -Path .\source\__init__.py -Force; New-Item -ItemType File -Path .\test\__init__.py -Force; New-Item -ItemType File -Path .\utils\__init__.py -Force
+    New-Item -ItemType File -Path main.py -Force; New-Item -ItemType File -Path requirements.txt -Force; New-Item -ItemType File -Path .\config\__init__.py -Force; New-Item -ItemType File -Path .\source\__init__.py -Force; New-Item -ItemType File -Path .\test\__init__.py -Force; New-Item -ItemType File -Path .\utils\__init__.py -Force
     ```
 
 3. How I work with the folders:

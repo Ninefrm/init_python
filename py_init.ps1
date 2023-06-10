@@ -24,6 +24,7 @@ if ($sys -eq 'win') {
 
     # Init required folders on PowerShell
     New-Item -ItemType File -Path main.py -Force
+    New-Item -ItemType File -Path requirements.txt -Force
     New-Item -ItemType File -Path .\config\__init__.py -Force
     New-Item -ItemType File -Path .\source\__init__.py -Force
     New-Item -ItemType File -Path .\test\__init__.py -Force
