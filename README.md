@@ -66,6 +66,7 @@ Having the folder/repository created
 4. Scripts
     ### MacOS / Linux
     ```bash
+    chmod 700 py_init.sh
     pyenv install -l #List python version list
     py_init.sh unix <version>
     ```
