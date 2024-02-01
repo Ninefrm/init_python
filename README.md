@@ -44,7 +44,7 @@ Having the folder/repository created
 2. Init required folders:
     ### MacOS / Linux
     ```bash
-    mkdir -p config source test utils && touch main.py requirements.txt config/__init__.py source/__init__.py test/__init__.py utils/__init__.py
+    mkdir -p config container secrets source test utils && touch main.py requirements.txt config/__init__.py source/__init__.py test/__init__.py utils/__init__.py container/deployment.yaml
     ```
     ### Windows || Powershell
     ```bash
