@@ -17,7 +17,7 @@ These are the steps I normally follow to start a python project, I do it more as
 Having the folder/repository created
 1. Set Python version, open your Terminal and execute the following commands:
 
-    ### MacOS / Linux
+    ### MacOS / Linux 
     ```bash
     pyenv versions # Installed versions
         pyenv install -l #List python version list
@@ -37,8 +37,9 @@ Having the folder/repository created
     ```
 2. Init poetry project
 
+    Poetry init new project
 
-    ### MacOS / Linux / Windows
+    ### [MacOS / Linux / Windows](https://python-poetry.org/docs/basic-usage/ 'Poetry') 
     ```bash
     #Init poetry project
     poetry init
