@@ -71,7 +71,13 @@ If we need to add dependencies while we are developing, it is necessary to use:
     ```bash
     poetry add <dependency-name>
     ```
-4. Init folders structure:
+4. We have to install our project to start using on our system
+
+    ```bash
+    poetry install --no-root
+    poetry run python main.py #With this command we would run any file using our poetry environment for the project
+    ```
+5. Init folders structure:
     ### MacOS / Linux
     ```bash
     mkdir -p config container secrets source test utils && touch main.py config/__init__.py config/config.py source/__init__.py test/__init__.py utils/__init__.py container/deployment.yaml
@@ -101,7 +107,7 @@ If we need to add dependencies while we are developing, it is necessary to use:
 
     ```
 
-4. How I work with the folders:
+6. How I work with the folders:
     1. **config**: This directory is often used to store configuration files. These might include settings for different environments (like development, staging, and production), constants used throughout your application, or configuration for external services.
     A common way to structure this is to have Python files such as dev.py, prod.py, staging.py etc. which are loaded based on the current environment. Each file could contain settings relevant to that environment.
 
@@ -117,7 +123,7 @@ If we need to add dependencies while we are developing, it is necessary to use:
 
             deployment.yaml: A YAML file, typically used for Kubernetes to define how a containerized application should be deployed.
 
-4. Project schema
+7. Project schema
 
         init_python
         ├── pyproject.toml
@@ -133,5 +139,4 @@ If we need to add dependencies while we are developing, it is necessary to use:
         ├── test
         ├── utils
         │   └── __init__.py
-        └── tests
-            
+
